@@ -7,26 +7,80 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            <Grid RowSpacing="15" ColumnSpacing="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                Text="Slovník"
+                FontSize="Large"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
             <Entry
                 x:Name="zadaneSlovicko"
-                Placeholder="Zadej slovicko co chces vyhledat mnau :3"/>
+                Placeholder="Zadej slovíčko co chceš vyhledat :3"
+                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+
             <Button
                 x:Name="vyhledatButton"
                 Text="Vyhledat"
-                Clicked="vyhledatButton_Clicked"/>
+                Clicked="vyhledatButton_Clicked"
+                Grid.Row="3" Grid.Column="0"
+                CornerRadius="15"/>
+
+                <Button
+                x:Name="resetButton"
+                Text="Resetovat"
+                Clicked="resetButton_Clicked"
+                Grid.Row="3" Grid.Column="1"
+                CornerRadius="15"/>
+
             <Label 
-                x:Name="lblHledaneSlovicko"/>
+                x:Name="lblHledaneSlovicko"
+                Text="Hledané slovíčko: "
+                Grid.Row="5" Grid.Column="0"/>
+
             <Label
-                x:Name="lblVyslovnost"/>
+                x:Name="lblVyslovnost"
+                Text="Výslovnost: "
+                Grid.Row="5" Grid.Column="1"/>
+
             <Label
-                x:Name="lblDefinice"/>
+                x:Name="lblDefinice"
+                Text="Definice: "
+                Grid.Row="7" Grid.Column="0"/>
+
             <Label
-                x:Name="lblVyznam"/>
+                x:Name="lblVyznam"
+                Text="Význam: "
+                Grid.Row="7" Grid.Column="1"/>
+
             <Label
-                x:Name="lblSynonyma"/>
+                x:Name="lblSynonyma"
+                Text="Synonyma: "
+                Grid.Row="9" Grid.Column="0" />
+
             <Label
-                x:Name="lblAntonyma"/>
+                x:Name="lblAntonyma"
+                Text="Antonyma: "
+                Grid.Row="9" Grid.Column="1"/>
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
