@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json;
 namespace APIslovnik
 {
     internal class tridy
     {
+
         // Root myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(myJsonResponse);
         public class Definition
         {
@@ -27,6 +28,8 @@ namespace APIslovnik
 
         public class Phonetic
         {
+            public string audio { get; set; }
+            public string sourceUrl { get; set; }
             public string text { get; set; }
         }
 

@@ -5,8 +5,8 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+        Padding="30,0"
+        Spacing="25">
             <Grid RowSpacing="15" ColumnSpacing="15">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -32,12 +32,12 @@
                 HorizontalTextAlignment="Center"
                 Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
 
-            <Entry
+                <Entry
                 x:Name="zadaneSlovicko"
                 Placeholder="Zadej slovíčko co chceš vyhledat :3"
                 Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
 
-            <Button
+                <Button
                 x:Name="vyhledatButton"
                 Text="Vyhledat"
                 Clicked="vyhledatButton_Clicked"
@@ -51,32 +51,32 @@
                 Grid.Row="3" Grid.Column="1"
                 CornerRadius="15"/>
 
-            <Label 
+                <Label 
                 x:Name="lblHledaneSlovicko"
                 Text="Hledané slovíčko: "
                 Grid.Row="5" Grid.Column="0"/>
 
-            <Label
+                <Label
                 x:Name="lblVyslovnost"
                 Text="Výslovnost: "
                 Grid.Row="5" Grid.Column="1"/>
 
-            <Label
+                <Label
                 x:Name="lblDefinice"
                 Text="Definice: "
                 Grid.Row="7" Grid.Column="0"/>
 
-            <Label
+                <Label
                 x:Name="lblVyznam"
                 Text="Význam: "
                 Grid.Row="7" Grid.Column="1"/>
 
-            <Label
+                <Label
                 x:Name="lblSynonyma"
                 Text="Synonyma: "
                 Grid.Row="9" Grid.Column="0" />
 
-            <Label
+                <Label
                 x:Name="lblAntonyma"
                 Text="Antonyma: "
                 Grid.Row="9" Grid.Column="1"/>
