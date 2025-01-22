@@ -36,9 +36,9 @@ namespace APIslovnik
             catch (HttpRequestException ex)
             {
                 //chyti chybu ze nenasel slovicko
-                lblHledaneSlovicko.Text = "Chyba: Slovíčko zřejmě neexistuje v anglickém jazyce :(";
+                lblHledaneSlovicko.Text = "Chyba! To nechceš :(";
                 lblVyznam.Text = string.Empty;
-                lblVyslovnost.Text = string.Empty;
+                lblVyslovnost.Text = "Kapříček s nivičičkou <33";
                 lblDefinice.Text = string.Empty;
                 lblSynonyma.Text = string.Empty;
                 lblAntonyma.Text = string.Empty;
